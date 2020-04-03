@@ -1,290 +1,164 @@
-* {
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html>
+  <!-- Settings of the HTML document -->
+  <head>
+  <link rel="stylesheet" href="C:\Users\J S\Downloads\fontawesome-free-5.13.0-web/all.css"/>
+ 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codridge</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="header-left">
+          <h1><span class="fa fa-angle-double-right"></span>Codridge</h1>
+        </div>
+        <span class="fa fa-bars menu-icon"></span>
+        <div class="header-right">
+          <a href="#">Lessons</a>
+          <a href="#" class="login">Log in</a>
+          <a href="#" class="AboutUs">About Us</a>
+          <a href="#" class="faqs">FAQs</a>
+        </div>
+      </div>
+    </header>
+    <!-- Top -->
+    <div class="top-wrapper">
+      <div class="container">
+        <h1>Bridging the gap between You and Coding. </h1>
+        <h1>It takes both sides to build a bridge.</h1>
+        <p> We hold our end of the bargain by providing with an enriching coding platform
+          through customized training according to the student. </p>
+        <p>
+         Sign up to get the full access.
+        </p>
+        <div class="btn-wrapper">
+          <a href="#" class="btn signup"><span class="fa fa-envelop"></span>Sign up with Email</a>
+          <p>or</p>
+          <a href="#" class="btn facebook"
+            ><span class="fa fa-facebook"></span> Sign up with Facebook</a
+          >
+          </i>
+          <a href="#" class="btn twitter"
+            ><span class="fa fa-twitter"></span>Sign up with Twitter</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- Sign up modal -->
+    <div class="signup-modal-wrapper" id="signup-modal">
+      <div class="modal">
+        <div class="close-modal">
+          <i class="fa fa-2x fa-times">×</i>
+        </div>
+        <div id="signup-form">
+          <h2>Sign up with email</h2>
+          <form action="#">
+            <input class="form-control" type="text" placeholder="Email" />
+            <input
+              class="form-control"
+              type="password"
+              placeholder="Password"
+            />
+            <div id="submit-btn">Sign up</div>
+          </form>
+        </div>
 
-html,
-body,
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-div {
-  margin: 0;
-  padding: 0;
-}
 
-body {
-  font-family: "Lucida Grande";
-}
+        </div>
 
-a {
-  text-decoration: none;
-}
 
-.clear {
-  clear: left;
-}
 
-.container {
-  max-width: 1170px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
 
-.top-wrapper {
-  padding: 50px 0 100px 0;
-  background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
-  background-size: cover;
-  color: white;
-  text-align: center;
-}
+     
+    </div>
+    <!-- Lesson -->
+    <div class="lesson-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>Learn Where to Get Started!</h2>
+        </div>
+        <div class="lessons1">
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="https://prog-8.com/images/html/advanced/html.png" />
+              <p>HTML & CSS</p>
+            </div>
+            <p class="text-contents">
+              Languages used to build and design the appearances of your
+              websites. HTML adds the structure, and CSS styles it.
 
-.top-wrapper h1 {
-  opacity: 0.7;
-  font-size: 45px;
-  letter-spacing: 5px;
-  margin-bottom: 10px;
-}
+            </p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="https://prog-8.com/images/html/advanced/jQuery.png" />
+              <p>jQuery</p>
+            </div>
+            <p class="text-contents">
+              A fast, feature-rich and easy-to-use JavaScript library that
+              handles animations and Ajax requests.
 
-.top-wrapper p {
-  opacity: 0.7;
-  margin-bottom: 3px;
-}
 
-.btn-wrapper {
-  text-align: center;
-  margin: 20px 0;
-}
+            </p>
+          </div>
+         
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="https://prog-8.com/images/html/advanced/ruby.png" />
+              <p>Ruby</p>
+            </div>
+            <p class="text-contents">
+              A dynamic, general-purpose language that is simple and productive.
+              It is commonly used around the world to build web applications.
 
-.btn-wrapper p {
-  margin: 10px 0;
-}
+            </p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="https://prog-8.com/images/html/advanced/php.png" />
+              <p>PHP</p>
+            </div>
+            <p class="text-contents">
+              An open source scripting language that can be embedded into HTML,
+              and well suited for web development.
 
-.signup {
-  background-color: #239b76;
-}
 
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
-}
-
-.twitter {
-  background-color: #55acee;
-}
-
-.btn {
-  padding: 12px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.btn:hover {
-  opacity: 1;
-}
-
-.fa {
-  margin-right: 5px;
-}
-
-header {
-  height: 65px;
-  width: 100%;
-  background-color: #0C2AE9;
-  position: fixed;
-  top: 0;
-  z-index: 10;
-}
-
-.logo {
-  width: 124px;
-  margin-top: 20px;
-}
-
-.header-left {
-  float: left;
-}
-
-.header-right {
-  float: right;
-  margin-right: -25px;
-}
-
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  float: left;
-  transition: all 0.5s;
-}
-
-.header-right a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-/* Modal  */
-/* Modal is not visible by default. Modal become visible by changing the display property */
-.signup-modal-wrapper {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 100;
-  display: none;
-}
-
-.modal {
-  position: absolute;
-  top: 20%;
-  left: 34%;
-  background-color: #e6ecf0;
-  padding: 20px 0 40px;
-  border-radius: 10px;
-  width: 450px;
-  height: auto;
-  text-align: center;
-}
-
-.fa-times {
-  position: absolute;
-
-  top: 12px;
-  right: 12px;
-  color: rgba(128, 128, 128, 0.46);
-  cursor: pointer;
-}
-
-.fa-times:hover {
-  color: #8491a5;
-  background-color: #ccd9ea;
-  transition: 0.3s ease-in-out;
-}
-
-#signup-form {
-  width: 100%;
-}
-
-#signup-form h2 {
-  color: #5f5d60;
-  letter-spacing: 1px;
-  margin-bottom: 40px;
-}
-
-#signup-form input {
-  width: 320px;
-  margin-bottom: 20px;
-  font-size: 12px;
-  padding: 12px 12px;
-  border: 1px solid #d0d5d8;
-  border-radius: 5px;
-}
-
-#submit-btn {
-  display: inline-block;
-  padding: 14px 140px;
-  background-color: #5dca88;
-  border: none;
-  border-radius: 3px;
-  color: white;
-  margin: 10px auto;
-  cursor: pointer;
-}
-
-.lesson-wrapper {
-  padding-bottom: 80px;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #f7f7f7;
-  text-align: center;
-}
-
-.heading {
-  padding-top: 80px;
-  padding-bottom: 50px;
-  color: #0C2AE9;
-}
-
-.heading h2 {
-  font-weight: normal;
-}
-
-.lesson {
-  float: left;
-  width: 25%;
-}
-
-.lesson-icon {
-  position: relative;
-}
-
-.lesson-icon p {
-  position: absolute;
-  top: 44%;
-  width: 100%;
-  color: white;
-}
-
-.text-contents {
-  width: 80%;
-  display: inline-block;
-  margin-top: 15px;
-  font-size: 15px;
-  color: #b3aeb5;
-}
-
-.heading h3 {
-  font-weight: normal;
-}
-
-.message-wrapper {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 80px;
-  text-align: center;
-}
-
-.message {
-  padding: 15px 40px;
-  background-color: #5dca88;
-  cursor: pointer;
-  box-shadow: 0 7px #1a7940;
-}
-
-.message:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
-}
-
-footer img {
-  width: 125px;
-}
-
-footer p {
-  color: #b3aeb5;
-  font-size: 12px;
-}
-
-footer {
-  padding-top: 30px;
-  padding-bottom: 20px;
-}
-
-.menu-icon {
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  display: none;
-}
+            </p>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Message -->
+    <div class="message-wrapper">
+<img src="https://familylivingtoday.com/wp-content/uploads/2017/11/A-group-of-kids-using-a-laptop.jpg">
+      <div class="container">
+        <div class="heading">
+          <h2>Ready to become an awesome programmer?</h2>
+          <h3>Tell us your story! </h3>
+        </div>
+        <span class="btn message">Start Exploring</span>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+         <div class ="footer-title">
+         <h1><span class="fa fa-angle-double-right">Codridge</h1>
+         <ul>
+           <li><span class="fa fa-facebook"></span>  facebook</li>
+            <li><span class="fa fa-instagram"></span>instagram</li>
+             <li><span class="fa fa-linkedin"></span>linkedIn</li>
+         </ul>
+        <p>Bridging the gap between You and Coding.</p>
+      </div>
+      <script type="text/javascript" src="script.js"></script>
+    </footer>
+  </body>
+</html>
